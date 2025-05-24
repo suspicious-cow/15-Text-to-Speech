@@ -10,7 +10,7 @@ print("Generating speech with TTS-1-HD model (higher quality)...")
 try:
     with client.audio.speech.with_streaming_response.create(
         model="tts-1-hd",
-        voice="nova",
+        voice="alloy",
         input="This is generated using the TTS-1-HD model, which provides higher quality audio with increased latency.",
         response_format="mp3",
         speed=1  # Speed control works with tts-1-hd

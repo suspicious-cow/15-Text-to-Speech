@@ -10,7 +10,7 @@ print("Generating speech with GPT-4o-Mini-TTS model (supports instructions)...")
 try:
     with client.audio.speech.with_streaming_response.create(
         model="gpt-4o-mini-tts",
-        voice="coral",
+        voice="alloy",
         input="This is generated using the GPT-4o-Mini-TTS model, which supports custom voice instructions for more control.",
         instructions="Speak in a calm, professional tone with slight emphasis on technical terms.",
         response_format="mp3"
